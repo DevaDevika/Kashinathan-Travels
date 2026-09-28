@@ -1,0 +1,1294 @@
+/* =========================================================
+   KASHINATHAN TRAVELS
+   Complete Responsive CSS
+   Vintage + Modern Travel Style
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f4f0e7;
+    color: #183638;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    padding: 22px 5%;
+
+    color: white;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo span {
+    color: #d9a441;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.logo h2 {
+    font-size: 19px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.logo small {
+    margin-top: 7px;
+    font-family: Arial, sans-serif;
+    font-size: 7px;
+    letter-spacing: 3px;
+    opacity: 0.8;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-left: auto;
+}
+
+.navbar nav a {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #d9a441;
+}
+
+.book-btn {
+    display: inline-block;
+
+    padding: 13px 20px;
+
+    background: #d9a441;
+    color: #183638;
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    background: white;
+    transform: translateY(-2px);
+}
+
+.menu-btn {
+    display: none;
+
+    border: none;
+    background: transparent;
+    color: white;
+
+    font-size: 27px;
+    cursor: pointer;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(10, 30, 32, 0.42),
+            rgba(10, 30, 32, 0.52)
+        ),
+        url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=2000&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 18px;
+
+    border: 1px solid rgba(255,255,255,0.4);
+
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+    color: white;
+
+    padding: 20px;
+}
+
+.stars {
+    color: #d9a441;
+    letter-spacing: 9px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(70px, 13vw, 180px);
+    font-weight: normal;
+    letter-spacing: 14px;
+    margin-right: -14px;
+    line-height: 0.9;
+}
+
+.hero-content > p {
+    margin-top: 25px;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 6px;
+}
+
+.hero-line {
+    width: 70px;
+    height: 1px;
+    background: #d9a441;
+
+    margin: 25px auto;
+}
+
+.hero h3 {
+    font-size: 17px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* =========================================================
+   COMMON SECTION
+========================================================= */
+
+.section-title {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 55px;
+}
+
+.section-title > span {
+    display: block;
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #b18227;
+
+    margin-bottom: 15px;
+}
+
+.section-title h2 {
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+.section-title p {
+    margin-top: 18px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: #607071;
+}
+
+/* =========================================================
+   WELCOME
+========================================================= */
+
+.welcome {
+    padding: 110px 5%;
+}
+
+.welcome-card {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background: white;
+
+    box-shadow: 0 25px 70px rgba(24,54,56,0.12);
+}
+
+.welcome-text,
+.booking-preview {
+    padding: 75px 65px;
+}
+
+.welcome-text {
+    background: #183638;
+    color: white;
+}
+
+.section-label {
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: #d9a441;
+}
+
+.welcome h2 {
+    margin-top: 18px;
+
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 1.08;
+}
+
+.welcome-text p {
+    margin: 25px 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+
+    color: rgba(255,255,255,0.75);
+}
+
+.outline-btn {
+    display: inline-block;
+
+    border: 1px solid #d9a441;
+    color: white;
+
+    padding: 13px 20px;
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.outline-btn:hover {
+    background: #d9a441;
+    color: #183638;
+}
+
+.booking-preview {
+    background: #eee9dd;
+}
+
+.booking-preview h2 {
+    margin-top: 18px;
+
+    font-size: 38px;
+    font-weight: normal;
+}
+
+.destination-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+
+    margin: 30px 0;
+}
+
+.destination {
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+}
+
+.destination img {
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.destination:hover img {
+    transform: scale(1.07);
+}
+
+.destination span {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.book-link {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    color: #183638;
+}
+
+.book-link:hover {
+    color: #b18227;
+}
+
+/* =========================================================
+   VEHICLES
+========================================================= */
+
+.vehicles {
+    padding: 110px 5%;
+    background: #e9e4d8;
+}
+
+.vehicle-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.vehicle-card {
+    background: white;
+    overflow: hidden;
+
+    box-shadow: 0 15px 40px rgba(24,54,56,0.08);
+
+    transition: 0.35s;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-7px);
+}
+
+.vehicle-image {
+    height: 280px;
+    overflow: hidden;
+}
+
+.vehicle-image img {
+    height: 100%;
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.vehicle-card:hover .vehicle-image img {
+    transform: scale(1.05);
+}
+
+.vehicle-card h3 {
+    padding: 22px 25px 5px;
+
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.vehicle-card p {
+    padding: 0 25px;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #718080;
+}
+
+.vehicle-card a {
+    display: inline-block;
+
+    margin: 18px 25px 25px;
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+
+    color: #b18227;
+}
+
+/* =========================================================
+   PACKAGES
+========================================================= */
+
+.packages {
+    padding: 110px 5%;
+}
+
+.package-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.package-card {
+    height: 450px;
+
+    position: relative;
+    overflow: hidden;
+
+    color: white;
+}
+
+.package-card::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        transparent 40%,
+        rgba(0,0,0,0.75)
+    );
+}
+
+.package-card img {
+    height: 100%;
+    object-fit: cover;
+
+    transition: 0.6s;
+}
+
+.package-card:hover img {
+    transform: scale(1.06);
+}
+
+.package-card h3,
+.package-card p {
+    position: absolute;
+    left: 25px;
+    z-index: 2;
+}
+
+.package-card h3 {
+    bottom: 55px;
+
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.package-card p {
+    bottom: 27px;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+
+    opacity: 0.85;
+}
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+.gallery {
+    padding: 110px 5%;
+    background: #183638;
+    color: white;
+}
+
+.gallery .section-title p {
+    color: rgba(255,255,255,0.65);
+}
+
+.gallery-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.gallery-grid img {
+    height: 280px;
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 5%;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(20,45,46,0.65),
+            rgba(20,45,46,0.72)
+        ),
+        url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2000&q=85");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.contact-content {
+    max-width: 650px;
+}
+
+.contact-content > span {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #d9a441;
+}
+
+.contact h2 {
+    margin: 20px 0;
+
+    font-size: 60px;
+    font-weight: normal;
+    line-height: 1.05;
+}
+
+.contact p {
+    margin-bottom: 30px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: rgba(255,255,255,0.8);
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    padding: 65px 7%;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 50px;
+
+    background: #10292b;
+    color: white;
+}
+
+footer h2 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: #d9a441;
+}
+
+footer p {
+    margin-top: 12px;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+
+    color: rgba(255,255,255,0.65);
+}
+
+footer a {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+
+    color: rgba(255,255,255,0.7);
+}
+
+footer a:hover {
+    color: #d9a441;
+}
+
+/* =========================================================
+   TABLET / MOBILE MENU
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .navbar nav {
+        display: none;
+
+        position: absolute;
+
+        top: 75px;
+        left: 5%;
+        right: 5%;
+
+        padding: 25px;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 20px;
+
+        background: rgba(16,41,43,0.97);
+
+        box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+
+    .navbar nav.active {
+        display: flex;
+    }
+
+    .navbar nav a {
+        font-size: 11px;
+        padding: 5px 0;
+    }
+
+    .navbar > .book-btn {
+        margin-left: auto;
+        margin-right: 5px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .welcome-card {
+        grid-template-columns: 1fr;
+    }
+
+    .vehicle-grid,
+    .package-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 16px 5%;
+        gap: 8px;
+    }
+
+    .logo span {
+        font-size: 16px;
+    }
+
+    .logo h2 {
+        font-size: 15px;
+    }
+
+    .logo small {
+        font-size: 6px;
+        letter-spacing: 1.5px;
+    }
+
+    .navbar > .book-btn {
+        padding: 10px 12px;
+        font-size: 8px;
+    }
+
+    .menu-btn {
+        font-size: 25px;
+    }
+
+    /* HERO */
+
+    .hero {
+        min-height: 100vh;
+        background-position: center;
+    }
+
+    .hero::after {
+        inset: 10px;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+        letter-spacing: 5px;
+        margin-right: -5px;
+    }
+
+    .stars {
+        font-size: 9px;
+        letter-spacing: 5px;
+    }
+
+    .hero-content > p {
+        font-size: 8px;
+        letter-spacing: 3px;
+    }
+
+    .hero-line {
+        margin: 20px auto;
+    }
+
+    .hero h3 {
+        font-size: 13px;
+    }
+
+    /* COMMON */
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .section-title > span {
+        font-size: 8px;
+        letter-spacing: 3px;
+    }
+
+    .section-title h2 {
+        font-size: 34px;
+    }
+
+    .section-title p {
+        font-size: 12px;
+    }
+
+    /* WELCOME */
+
+    .welcome {
+        padding: 75px 5%;
+    }
+
+    .welcome-text,
+    .booking-preview {
+        padding: 42px 27px;
+    }
+
+    .welcome h2 {
+        font-size: 34px;
+    }
+
+    .welcome-text p {
+        font-size: 13px;
+    }
+
+    .destination-images {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .destination {
+        height: 180px;
+    }
+
+    .booking-preview h2 {
+        font-size: 30px;
+    }
+
+    /* VEHICLES */
+
+    .vehicles {
+        padding: 75px 5%;
+    }
+
+    .vehicle-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .vehicle-image {
+        height: 240px;
+    }
+
+    .vehicle-card h3 {
+        font-size: 23px;
+    }
+
+    /* PACKAGES */
+
+    .packages {
+        padding: 75px 5%;
+    }
+
+    .package-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .package-card {
+        height: 360px;
+    }
+
+    .package-card h3 {
+        font-size: 25px;
+    }
+
+    /* GALLERY */
+
+    .gallery {
+        padding: 75px 5%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .gallery-grid img {
+        height: 180px;
+    }
+
+    /* CONTACT */
+
+    .contact {
+        min-height: 500px;
+        padding: 60px 7%;
+    }
+
+    .contact h2 {
+        font-size: 42px;
+    }
+
+    .contact p {
+        font-size: 13px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        grid-template-columns: 1fr;
+        padding: 50px 8%;
+        gap: 32px;
+    }
+}
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .logo h2 {
+        font-size: 13px;
+    }
+
+    .logo small {
+        font-size: 5px;
+    }
+
+    .navbar > .book-btn {
+        padding: 9px 9px;
+        font-size: 7px;
+    }
+
+    .menu-btn {
+        font-size: 23px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        letter-spacing: 3px;
+        margin-right: -3px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .welcome h2 {
+        font-size: 30px;
+    }
+
+    .contact h2 {
+        font-size: 36px;
+    }
+}
+
+/* OWNER & STAFF SECTION */
+
+.team-section {
+    padding: 80px 6%;
+    background: #102a2a;
+    color: white;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title p {
+    color: #c49a52;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.owner-card {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: #173b3b;
+    border: 1px solid #c49a52;
+    border-radius: 18px;
+}
+
+.owner-card img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #c49a52;
+}
+
+.owner-info span {
+    color: #c49a52;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.owner-info h3 {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.owner-info p {
+    color: #d8d8d8;
+}
+
+.team-subtitle {
+    text-align: center;
+    color: #c49a52;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.staff-card {
+    background: #173b3b;
+    padding: 25px;
+    text-align: center;
+    border-radius: 16px;
+    border: 1px solid rgba(196, 154, 82, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.staff-card:hover {
+    transform: translateY(-6px);
+}
+
+.staff-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #c49a52;
+    margin-bottom: 15px;
+}
+
+.staff-card h3 {
+    margin: 8px 0;
+    font-size: 20px;
+}
+
+.staff-card p {
+    color: #c49a52;
+    font-weight: bold;
+}
+
+.staff-card span {
+    color: #d8d8d8;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+
+    .owner-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+    .team-section {
+        padding: 60px 5%;
+    }
+
+}
+
+/* TEAM SELECTOR */
+
+.team-selector {
+    padding: 55px 6%;
+    background: #102a2a;
+    color: white;
+}
+
+.team-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 25px 0 35px;
+}
+
+.team-tab {
+    width: auto;
+    padding: 13px 28px;
+    border: 1px solid #c49a52;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.team-tab.active,
+.team-tab:hover {
+    background: #c49a52;
+    color: #102a2a;
+}
+
+.team-content {
+    display: none;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.team-content.active {
+    display: block;
+}
+
+.empty-team {
+    text-align: center;
+    color: #d8d8d8;
+}
+
+@media (max-width: 600px) {
+
+    .team-buttons {
+        gap: 8px;
+    }
+
+    .team-tab {
+        padding: 12px 20px;
+        font-size: 12px;
+    }
+
+}
+.team-buttons {
+    display: flex !important;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.team-tab {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    padding: 14px 28px;
+    background: #c49a52 !important;
+    color: #102a2a !important;
+    border: 2px solid #c49a52;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo h2 {
+        font-size: 18px;
+    }
+
+    .logo small {
+        font-size: 8px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
+    .welcome-card {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .welcome-text h2 {
+        font-size: 30px;
+    }
+
+    .vehicle-grid,
+    .package-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vehicle-card,
+    .package-card {
+        width: 100%;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .team-buttons {
+        flex-wrap: wrap;
+    }
+
+    .team-tab {
+        padding: 12px 20px !important;
+        font-size: 12px;
+    }
+
+    .owner-card {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .owner-card img {
+        width: 220px !important;
+        height: 260px !important;
+    }
+
+    .staff-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .staff-card img {
+        width: 200px !important;
+        height: 230px !important;
+    }
+
+    .contact-content h2 {
+        font-size: 30px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+}
